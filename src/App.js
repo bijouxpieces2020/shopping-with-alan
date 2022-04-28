@@ -4,23 +4,23 @@ import "./App.css";
 
 
 function App() {
-const [cart, setCart] = useState([]);
-const [menuItems, setMenuItems] = useState([]);
-const roolElRef = useRef(null);
-const addToCart = (menuItem) => {
+    const [cart, setCart] = useState([]);
+    const [menuItems, setMenuItems] = useState([]);
+    const roolElRef = useRef(null);
+    const addToCart = (menuItem) => {
 
 setCart((oldCart) => {
 
-return [...oldCart, menuItem];
+    return [...oldCart, menuItem];
 
 });
 
 };
 
-
+// AI button
 useEffect(() => {
 
-if (!window.alanBtnInstance) {
+    if (!window.alanBtnInstance) {
 
 window.alanBtnInstance = alanBtn({
 
